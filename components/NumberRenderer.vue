@@ -16,6 +16,7 @@ export default {
   },
   computed: {
     numbers() {
+      console.log(this)
       const evens = []
       const odds = []
       for (let i = 1; i < 10; i++) {

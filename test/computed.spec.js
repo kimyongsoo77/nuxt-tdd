@@ -15,7 +15,7 @@ xdescribe('NumberRenderer', () => {
   it('홀수를 렌더한다', () => {
     const localThis = { even: false }
 
-    console.log(this)
+    // console.log(this)
     expect(NumberRenderer.computed.numbers.call(localThis)).toBe(
       '1, 3, 5, 7, 9'
     )

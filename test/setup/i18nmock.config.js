@@ -1,6 +1,6 @@
 import { config } from '@vue/test-utils'
 import translations from '@/test/translations.js'
-const locale = 'ja'
+const locale = 'en'
 
 config.mocks = {
   $t: (msg) => translations[locale][msg],

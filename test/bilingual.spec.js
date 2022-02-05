@@ -11,7 +11,7 @@ import Bilingual from '@/components/Bilingual.vue'
 //   $t: (msg) => translations[locale][msg],
 // }
 
-describe('Bilingual', () => {
+xdescribe('Bilingual', () => {
   it('성공적으로 렌더한다', () => {
     // console.log(config)
     // const wrapper = shallowMount(Bilingual, {
@@ -21,6 +21,8 @@ describe('Bilingual', () => {
     // })
 
     const wrapper = shallowMount(Bilingual)
+    const b = wrapper.find('.hello')
+    expect(b.text()).toBe('Hello world!')
     console.log(wrapper.html())
   })
 })
