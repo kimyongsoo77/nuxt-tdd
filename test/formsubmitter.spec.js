@@ -15,7 +15,7 @@ const mockHttp = {
   },
 }
 
-describe('FormSubmitter', () => {
+xdescribe('FormSubmitter', () => {
   it('제출했을 때 알림이 나타난다', async () => {
     const wrapper = shallowMount(FormSubmitter, {
       mocks: {
