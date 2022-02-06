@@ -2,7 +2,7 @@ import { shallowMount, mount } from '@vue/test-utils'
 import ParentWithAPICallChild from '@/components/ParentWithAPICallChild.vue'
 import ComponentWithAsyncCall from '@/components/ComponentWithAsyncCall.vue'
 
-describe('ParentWithAPICallChild.vue', () => {
+xdescribe('ParentWithAPICallChild.vue', () => {
   it('마운트로 렌더하고 API 호출을 초기화한다', () => {
     // const wrapper = mount(ParentWithAPICallChild)
 
