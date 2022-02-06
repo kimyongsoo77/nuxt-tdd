@@ -11,7 +11,7 @@ const store = new Vuex.Store({
   },
 })
 
-describe('ComponentWithVuex', () => {
+xdescribe('ComponentWithVuex', () => {
   it('실제 Vuex 스토어를 사용해서 username을 렌더한다', () => {
     const wrapper = shallowMount(ComponentWithVuex, {
       store,
