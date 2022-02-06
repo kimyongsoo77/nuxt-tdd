@@ -179,7 +179,7 @@ export const actions = {
     // commit('setProductList', apidata.products);
   },
 
-  async getMenuInfo(context, auth) {
+  async getMenuInfo({ commit }, auth) {
     try {
       const config = {
         headers: {
@@ -202,7 +202,7 @@ export const actions = {
               config
             )
             .then((res) => {
-              context.commit('setCategory', res.data)
+              commit('setCategory', res.data)
             })
           // commit('setCategory', apidata.productCategories);
 
@@ -210,7 +210,7 @@ export const actions = {
           await this.$axios
             .get(`${process.env.API_URL}/kiosk/api/v0/products`, config)
             .then((res) => {
-              context.commit('setProductList', res.data)
+              commit('setProductList', res.data)
             })
 
           // option groups
@@ -220,14 +220,14 @@ export const actions = {
               config
             )
             .then((res) => {
-              context.commit('setProductOptonGroups', res.data)
+              commit('setProductOptonGroups', res.data)
             })
 
           // option groups
           await this.$axios
             .get(`${process.env.API_URL}/kiosk/api/v0/product_options`, config)
             .then((res) => {
-              context.commit('setProductOptions', res.data)
+              commit('setProductOptions', res.data)
             })
 
           // commit('setProductOptions', apidata.productOptions);
