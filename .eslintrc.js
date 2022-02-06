@@ -14,5 +14,6 @@ module.exports = {
   rules: {
     'no-console': 'off',
     'vue/multi-word-component-names': 'off',
+    'import/no-named-as-default-member': 'off',
   },
 }
